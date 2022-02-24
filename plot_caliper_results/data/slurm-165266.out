@@ -1,0 +1,608 @@
+Autoloading python/3.8.3
+Autoloading hpe-mpi/2.22.hmpt
+hpe-mpi(33):ERROR:105: Unable to locate a modulefile for 'hpe-mpi/2.22.hmpt'
+Autoloading cuda/11.0.2
+Autoloading py-numpy/1.19.4
+Autoloading py-mpi4py/3.0.3
+Autoloading hpe-mpi/2.25.hmpt
+Autoloading py-h5py/3.1.0
+Autoloading hdf5/1.10.7
+Autoloading hpe-mpi/2.22.hmpt
+hpe-mpi(49):ERROR:105: Unable to locate a modulefile for 'hpe-mpi/2.22.hmpt'
+numprocs=80
+NEURON -- VERSION 8.0a-654-g6cdbef8d1+ HEAD (6cdbef8d1+) 2021-09-15
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2021
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/ALU.mod" "mod/ASCIIrecord.mod" "mod/BinReportHelper.mod" "mod/BinReports.mod" "mod/cacummb.mod" "mod/cacumm.mod" "mod/cagk.mod" "mod/cal2.mod" "mod/can2.mod" "mod/cat.mod" "mod/CoreConfig.mod" "mod/DetAMPANMDA.mod" "mod/DetGABAAB.mod" "mod/gap.mod" "mod/GluSynapse.mod" "mod/HDF5reader.mod" "mod/HDF5record.mod" "mod/h.mod" "mod/kadist.mod" "mod/kaprox.mod" "mod/kca.mod" "mod/kd2.mod" "mod/kdb.mod" "mod/kd.mod" "mod/kdrbca1.mod" "mod/kdrca1.mod" "mod/kmb.mod" "mod/km.mod" "mod/lookupTableV2.mod" "mod/memoryaccess.mod" "mod/MemUsage.mod" "mod/na3n.mod" "mod/naxn.mod" "mod/netstim_inhpoisson.mod" "mod/ProbAMPANMDA_EMS.mod" "mod/ProbGABAAB_EMS.mod" "mod/ProfileHelper.mod" "mod/SonataReportHelper.mod" "mod/SonataReports.mod" "mod/SpikeWriter.mod" "mod/SynapseReader.mod" "mod/TTXDynamicsSwitch.mod" "mod/utility.mod" "mod/VecStim.mod"
+[STEP] Initializing Neurodamus... Logfile: pydamus_2022-01-13_19h44.log
+[VERB]  -> Mechanisms (mod) library(s) successfully loaded
+[INFO]  => Neurodamus Mod & Hoc lib loaded.
+[INFO] Checking for plugins...
+[INFO]  => Engines Available: ['Base', 'NGV', 'PointNeuron', 'METype']
+[INFO]   : Connections Types: ['NeuroGlial', 'GlioVascular', 'Point', None, 'Synaptic', 'GapJunction']
+[STEP] Setting up Neurodamus configuration
+[INFO] Initializing Simulation Configuration and Validation
+[VERB]  -> ConfigFile: BlueConfig
+[VERB]  -> CLI Options: {'simulate_model': True, 'modelbuilding_steps': None, 'build_model': 'AUTO', 'output_path': None, 'experimental_stims': None, 'keep_build': False, 'help': False}
+[VERB]  -> CIRCUIT (default): /gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/
+[VERB]  ->  > MorphologyType = swc, src: /gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/morphologies/swc
+[VERB]  -> Global params: celsius: 34 | v_init: -65 | extracellular_calcium: None | tstop: 100.0 | buffer_time: 25
+[VERB]  -> Simulator = NEURON
+[VERB]  -> Spike_Location = soma
+[VERB]  -> Spike_Threshold = -30
+[WARNING] Setting CurrentDir to '.' is discouraged and shall never be used in production jobs.
+[VERB]  -> CurrentDir = /gpfs/bbp.cscs.ch/project/proj16/NEURONFrontiers2021/hippocampus/run_neuron_simulation/165266
+Directory /gpfs/bbp.cscs.ch/project/proj16/NEURONFrontiers2021/hippocampus/run_neuron_simulation/165266/output does not exist.  Creating...
+[VERB]  -> OutputRoot = /gpfs/bbp.cscs.ch/project/proj16/NEURONFrontiers2021/hippocampus/run_neuron_simulation/165266/output
+[VERB]  -> delete_corenrn_data = False
+[INFO] Initializing hoc config objects
+MorphologyType specified in BlueConfig: swc . Using full MorphologyPath: /gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/morphologies/swc 
+Taking Simulator mode from BlueConfig
+SimulatorMode set to 'NEURON'
+As of Oct 2020 Neurodamus uses Random123 as default
+RNGMode set to 1  [COMPATIBILITY=0, RANDOM123=1, UPMCELLRAN4=2]
+Reading target file /gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/start.target
+Reading target file /gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/user_no_CA3_PC.target
+  * Target PV                 470 cells [3 subtargets]
+  * Target CCK                231 cells [3 subtargets]
+  * Target SOM                160 cells [4 subtargets]
+  * Target BS                 115 cells [2 subtargets]
+  * Target BC                 494 cells [2 subtargets]
+  * Target most_central_10     10 cells
+  * Target most_central_20     20 cells
+  * Target most_central_50     50 cells
+  * Target most_central_10    100 cells
+[INFO]  => Loaded 64 targets
+[INFO] Simulation target: Mosaic, Cell count: 18198
+[INFO] Checking Connection Configurations
+[INFO]  => CHECK No Global vars!
+[WARNING] Connection MGGate takes part in overriding chain:
+[INFO]  ->  ^     MGGate  Excitatory -> Mosaic                                 Weight: -        SpontMinis: -        SynConfigure: %s.mg
+[INFO]  ->  ^     AMPA_NMDA  Excitatory -> Mosaic                              Weight: -        SpontMinis: -        SynConfigure: %s.NMDA_ratio, %s.tau_r_NMDA, %s.tau_d_NMDA
+[INFO]  -> (base) All-All  Mosaic -> Mosaic                                    Weight: 1.0      SpontMinis: 0.01     SynConfigure: 
+[INFO]  => CHECK No single Weight=0 blocks!
+[STEP] ================ CALCULATING LOAD BALANCE ================
+[STEP] Computing Load Balance
+[WARNING] Your simulation has a very high count of cells per CPU. Please consider launching it in a larger MPI cluster
+[INFO] Load Balancing ENABLED. Mode: WholeCell
+[INFO]  => No cx_info file found!
+[INFO]  => Target Cx reusing is not available.
+[INFO] Could not reuse load balance data. Doing a Full Load-Balance
+[VERB]  -> Nodes Format: NodeFormat.SONATA, Loader: <lambda>
+[INFO] Reading Nodes (METype) info from '/gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/sonata/nodes/nodes.h5'
+[INFO]  -> Distributing 'hippocampus_neurons:Mosaic' target cells Round-Robin
+[INFO]  => Loaded info about 18198 target cells (out of 18198)
+[INFO] Generating mcomplex.dat...
+[INFO] Finalizing cells... Gid offset: 0
+[VERB]  -> Loading metypes from: /gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/emodels/hoc
+[VERB]  -> Loading 'swc' morphologies from: /gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/morphologies/swc
+[INFO]  > Instantiating cells... (228 in Rank 0)
+|-------20%-------40%-------60%-------80%------100%| [Time taken: 132.00 s]
+[INFO]  > Updating targets
+[INFO]  > Initializing cell network
+[STEP] LOADING CIRCUIT CONNECTIVITY
+[STEP] Circuit (default)
+[INFO] Init SynapseRuleManager. Options: {'load_offsets': False}
+[INFO] Opening Synapse file /gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/sonata/edges/edges.h5, population: hippocampus_neurons__hippocampus_neurons__chemical
+[VERB]  -> [SynReader] Using new-gen SynapseReader.
+[INFO] Loading connections to population: <ConnectionSet: Default>
+[INFO] Creating group connections (3 groups match)
+[INFO]  * Pathway Mosaic -> Mosaic. Created 4954673 connections
+[STEP] Handling projections...
+[INFO]  * SC (Type: None, Src: hippocampus_projections, Dst: hippocampus_neurons)
+[INFO]  * No known population hippocampus_projections. Creating Virtual src for projection
+[INFO] Opening Synapse file /gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/sonata/edges/edges.h5, population: hippocampus_projections__hippocampus_neurons__chemical
+[VERB]  -> [SynReader] Using new-gen SynapseReader.
+[INFO] Loading connections to population: <ConnectionSet: 2126-0 (hippocampus_projections->hippocampus_neurons)>
+[INFO] Creating group connections (1 groups match)
+[INFO]  * [ALL]. Created 31715709 connections
+[STEP] Configuring connections...
+[INFO]  * Pathway hippocampus_neurons:Mosaic -> hippocampus_neurons:Mosaic
+[INFO]  * Pathway hippocampus_projections: -> hippocampus_neurons:Mosaic:	configure with '%s.tau_r_NMDA = 3.9 %s.tau_d_NMDA = 148.5'
+[INFO]  * Pathway hippocampus_neurons:Excitatory -> hippocampus_neurons:Mosaic:	configure with '%s.NMDA_ratio = 1.22 %s.tau_r_NMDA = 3.9 %s.tau_d_NMDA = 148.5'
+[INFO]  * Pathway hippocampus_neurons:Excitatory -> hippocampus_neurons:Mosaic:	configure with '%s.mg = 1.0'
+[VERB]  -> setpvec 0 Compute LB╚Synapse creation    116.6975 
+[INFO] LB Info: TC=511452539.423 MC=54576.223 OptimalCx=6393156742786.000 FileName=sim_conf/cx_hippocampus_neurons_Mosaic.dat
+[INFO] Assigning Cells <-> 80 CPUs [mymetis3]
+total complexity is 5.11436e+08
+18198 cells
+18198 pieces
+maximum complexity is 6.39954e+06 for host 72
+load imbalance is 0.1%
+maximum of 228 pieces on host 0
+no broken cells
+[INFO] Clearing model
+[VERB]  -> setpvec 1 Compute LB                     283.7250 
+[STEP] ==================== BUILDING CIRCUIT ====================
+[STEP] LOADING NODES
+[VERB]  -> Nodes Format: NodeFormat.SONATA, Loader: <lambda>
+[INFO] Reading Nodes (METype) info from '/gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/sonata/nodes/nodes.h5'
+[INFO]  => Cell distribution from Load Balance is valid
+[INFO]  -> Distributing target 'Mosaic' using Load-Balance
+[INFO]  => Loaded info about 228 target cells (out of 18198)
+[STEP] FINALIZING CIRCUIT CELLS
+[STEP] Circuit (default)
+[INFO] Finalizing cells... Gid offset: 0
+[VERB]  -> Loading metypes from: /gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/emodels/hoc
+[VERB]  -> Loading 'swc' morphologies from: /gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/morphologies/swc
+[INFO]  > Instantiating cells... (228 in Rank 0)
+|-------20%-------40%-------60%-------80%------100%| [Time taken: 133.18 s]
+[INFO]  > Updating targets
+[INFO]  > Initializing cell network
+[VERB]  -> setpvec 2 Cell creation                  150.9533 
+[INFO] Executing neuron configures
+[STEP] LOADING CIRCUIT CONNECTIVITY
+[STEP] Circuit (default)
+[INFO] Init SynapseRuleManager. Options: {'load_offsets': False}
+[INFO] Opening Synapse file /gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/sonata/edges/edges.h5, population: hippocampus_neurons__hippocampus_neurons__chemical
+[VERB]  -> [SynReader] Using new-gen SynapseReader.
+[INFO] Loading connections to population: <ConnectionSet: Default>
+[INFO] Creating group connections (3 groups match)
+[INFO]  * Pathway Mosaic -> Mosaic. Created 4954673 connections
+[STEP] Handling projections...
+[INFO]  * SC (Type: None, Src: hippocampus_projections, Dst: hippocampus_neurons)
+[INFO]  * No known population hippocampus_projections. Creating Virtual src for projection
+[WARNING] At the moment only a single Virtual Cell Population works with REPLAY
+[INFO] Opening Synapse file /gpfs/bbp.cscs.ch/project/proj42/circuits/CA1.O1/mooc-circuit/sonata/edges/edges.h5, population: hippocampus_projections__hippocampus_neurons__chemical
+[VERB]  -> [SynReader] Using new-gen SynapseReader.
+[INFO] Loading connections to population: <ConnectionSet: 2126-0 (hippocampus_projections->hippocampus_neurons)>
+[INFO] Creating group connections (1 groups match)
+[INFO]  * [ALL]. Created 31715709 connections
+[STEP] Configuring connections...
+[INFO]  * Pathway hippocampus_neurons:Mosaic -> hippocampus_neurons:Mosaic
+[INFO]  * Pathway hippocampus_projections: -> hippocampus_neurons:Mosaic:	configure with '%s.tau_r_NMDA = 3.9 %s.tau_d_NMDA = 148.5'
+[INFO]  * Pathway hippocampus_neurons:Excitatory -> hippocampus_neurons:Mosaic:	configure with '%s.NMDA_ratio = 1.22 %s.tau_r_NMDA = 3.9 %s.tau_d_NMDA = 148.5'
+[INFO]  * Pathway hippocampus_neurons:Excitatory -> hippocampus_neurons:Mosaic:	configure with '%s.mg = 1.0'
+[VERB]  -> setpvec 3 Synapse creation               116.6268 
+[STEP] ================ INSTANTIATING SIMULATION ================
+[STEP] Handling Replay
+[STEP] Creating connections in the simulator
+[INFO] Instantiating synapses... Params: {'replay_mode': <ReplayMode.AS_REQUIRED: 1>}
+[INFO]  * Connections among hippocampus_neurons -> hippocampus_neurons, attach src: True
+Pop:(0, 0)|-------20%-------40%-------60%-------80%------100%| [Time taken: 60.09 s]
+[INFO]  => Created 4954673 synapses
+[INFO] Instantiating synapses... Params: {'replay_mode': <ReplayMode.AS_REQUIRED: 1>}
+[INFO]  * Connections among hippocampus_projections -> hippocampus_neurons, attach src: False
+Pop:(2126, 0)|-------20%-------40%-------60%-------80%------100%| [Time taken: 97.06 s]
+[INFO]  => Created 31715709 synapses
+[STEP] Stimulus Apply.
+[INFO] No electrodes path. Extracellular class of stimuli will be unavailable
+[INFO] Instantiating Stimulus Injects:
+[VERB]  -> setpvec 4 Enable Stimulus                0.0006 
+[STEP] Enabling modifications...
+[VERB]  -> setpvec 5 Enable Modifications           0.0001 
+[STEP] Reports Enabling
+[REPORTS] [info] :: Initializing PARALLEL implementation...
+[VERB]  -> setpvec 6 Enable Reports                 0.2574 
+[INFO] Preparing to run simulation...
+[VERB]  -> setpvec 7 Model Finalized╚stdinit        5.3841 
+[INFO] Executing actions after stdinit...
+[VERB]  -> setpvec 8 Model Finalized                5.4041 
+[INFO] Initializing with ForwardSkip 5000 ms
+[STEP] ======================= SIMULATION =======================
+[INFO] Running simulation until t=100 ms
+[t= 1.00] Completed  1% ETA: 01:30:08  [t= 2.00] Completed  2% ETA: 00:30:52  [t= 3.00] Completed  3% ETA: 00:30:36  [t= 4.00] Completed  4% ETA: 00:29:18  [t= 5.00] Completed  5% ETA: 00:29:00  [t= 6.00] Completed  6% ETA: 00:29:42  [t= 7.00] Completed  7% ETA: 00:28:24  [t= 8.00] Completed  8% ETA: 00:28:05  [t= 9.00] Completed  9% ETA: 00:28:47  [t=10.00] Completed 10% ETA: 00:27:28  [t=11.00] Completed 11% ETA: 00:27:10  [t=12.00] Completed 12% ETA: 00:27:52  [t=13.00] Completed 13% ETA: 00:27:33  [t=14.00] Completed 14% ETA: 00:26:15  [t=15.00] Completed 15% ETA: 00:26:57  [t=16.00] Completed 16% ETA: 00:26:38  [t=17.00] Completed 17% ETA: 00:25:20  [t=18.00] Completed 18% ETA: 00:25:02  [t=19.00] Completed 19% ETA: 00:25:43  [t=20.00] Completed 20% ETA: 00:24:25  [t=21.00] Completed 21% ETA: 00:24:07  [t=22.00] Completed 22% ETA: 00:24:48  [t=23.00] Completed 23% ETA: 00:24:30  [t=24.00] Completed 24% ETA: 00:23:12  [t=25.00] Completed 25% ETA: 00:23:54  [t=26.00] Completed 26% ETA: 00:23:35  [t=27.00] Completed 27% ETA: 00:22:17  [t=28.00] Completed 28% ETA: 00:22:59  [t=29.00] Completed 29% ETA: 00:22:40  [t=30.00] Completed 30% ETA: 00:21:22  [t=31.00] Completed 31% ETA: 00:21:04  [t=32.00] Completed 32% ETA: 00:21:45  [t=33.00] Completed 33% ETA: 00:20:27  [t=34.00] Completed 34% ETA: 00:20:09  [t=35.00] Completed 35% ETA: 00:20:51  [t=36.00] Completed 36% ETA: 00:20:32  [t=37.00] Completed 37% ETA: 00:19:14  [t=38.00] Completed 38% ETA: 00:19:56  [t=39.00] Completed 39% ETA: 00:19:37  [t=40.00] Completed 40% ETA: 00:18:19  [t=41.00] Completed 41% ETA: 00:18:01  [t=42.00] Completed 42% ETA: 00:18:43  [t=43.00] Completed 43% ETA: 00:17:24  [t=44.00] Completed 44% ETA: 00:17:06  [t=45.00] Completed 45% ETA: 00:17:48  [t=46.00] Completed 46% ETA: 00:16:29  [t=47.00] Completed 47% ETA: 00:16:11  [t=48.00] Completed 48% ETA: 00:16:53  [t=49.00] Completed 49% ETA: 00:16:34  [t=50.00] Completed 50% ETA: 00:15:16  [t=51.00] Completed 51% ETA: 00:15:58  [t=52.00] Completed 52% ETA: 00:15:39  [t=53.00] Completed 53% ETA: 00:14:21  [t=54.00] Completed 54% ETA: 00:14:03  [t=55.00] Completed 55% ETA: 00:14:44  [t=56.00] Completed 56% ETA: 00:13:26  [t=57.00] Completed 57% ETA: 00:13:08  [t=58.00] Completed 58% ETA: 00:13:49  [t=59.00] Completed 59% ETA: 00:13:31  [t=60.00] Completed 60% ETA: 00:12:13  [t=61.00] Completed 61% ETA: 00:12:54  [t=62.00] Completed 62% ETA: 00:12:36  [t=63.00] Completed 63% ETA: 00:11:18  [t=64.00] Completed 64% ETA: 00:11:59  [t=65.00] Completed 65% ETA: 00:11:41  [t=66.00] Completed 66% ETA: 00:10:23  [t=67.00] Completed 67% ETA: 00:10:04  [t=68.00] Completed 68% ETA: 00:10:46  [t=69.00] Completed 69% ETA: 00:09:28  [t=70.00] Completed 70% ETA: 00:09:09  [t=71.00] Completed 71% ETA: 00:09:51  [t=72.00] Completed 72% ETA: 00:09:33  [t=73.00] Completed 73% ETA: 00:08:14  [t=74.00] Completed 74% ETA: 00:08:56  [t=75.00] Completed 75% ETA: 00:08:38  [t=76.00] Completed 76% ETA: 00:07:19  [t=77.00] Completed 77% ETA: 00:07:01  [t=78.00] Completed 78% ETA: 00:07:43  [t=79.00] Completed 79% ETA: 00:06:24  [t=80.00] Completed 80% ETA: 00:06:06  [t=81.00] Completed 81% ETA: 00:06:48  [t=82.00] Completed 82% ETA: 00:05:30  [t=83.00] Completed 83% ETA: 00:05:11  [t=84.00] Completed 84% ETA: 00:05:53  [t=85.00] Completed 85% ETA: 00:05:35  [t=86.00] Completed 86% ETA: 00:04:16  [t=87.00] Completed 87% ETA: 00:04:58  [t=88.00] Completed 88% ETA: 00:04:40  [t=89.00] Completed 89% ETA: 00:03:21  [t=90.00] Completed 90% ETA: 00:03:03  [t=91.00] Completed 91% ETA: 00:03:45  [t=92.00] Completed 92% ETA: 00:02:26  [t=93.00] Completed 93% ETA: 00:02:08  [t=94.00] Completed 94% ETA: 00:02:50  [t=95.00] Completed 95% ETA: 00:02:32  [t=96.00] Completed 96% ETA: 00:01:13  [t=97.00] Completed 97% ETA: 00:01:55  [t=98.00] Completed 98% ETA: 00:01:37  [t=99.00] Completed 99% ETA: 00:00:18  [t=100.00] Completed 100% ETA: -0:60:60  [VERB]  -> setpvec 9 finished Run╚psolve            1829.8096 
+[INFO] Simulation finished.
+[INFO] Writing spikes to out.dat
+[WARNING] Writing spike reports with multiple populations is not supported. If needed, please update to a newer version of neurodamus.
+[VERB]  -> setpvec 10 finished Run                   1830.0306 
+[90m[DEBUG] Memusage [MB]: Max=5715.65, Min=5230.55, Mean(Stdev)=5526.53(133.06)[39m
+[INFO] Clearing model
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3eee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3cee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3dc10>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098a3890d0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9ce50>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9cf70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3eee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9adc0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3eee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3eee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb43ee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9ae50>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb85ca0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3de50>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3af70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3df70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3aca0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ef70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9baf0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9aee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3eee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9df70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9cc10>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ee50>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ddc0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3fdc0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ef70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3df70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098a37fdc0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ed30>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9cee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3eee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3fee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3cee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ce50>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3df70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9af70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3fb80>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9aee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3df70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9bee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb85ee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098a380dc0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb85e50>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ef70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9cf70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb85ee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb84f70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ef70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ed30>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ef70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3dd30>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098a37fee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ef70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3cdc0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb85f70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9af70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb43d30>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9bf70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9ae50>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ef70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb43ee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9bf70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3fee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9aee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb85ee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb85f70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3dee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3dc10>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ff70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3cdc0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9bdc0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ef70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ff70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3dee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3ef70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb3df70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b098fb9bdc0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b0993d67f70>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+Exception ignored in: <function PopulationNodes._append.<locals>.<lambda> at 0x2b099744dee0>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/data/scratch/proj16/magkanar/spack/software/linux-rhel7-x86_64/gcc-9.3.0/py-neurodamus-develop-wrfaz7/lib/python3.8/site-packages/neurodamus/core/nodeset.py", line 37, in <lambda>
+    on_obj_deleted = lambda ref: self.nodesets.remove(ref)
+ReferenceError: weakly-referenced object no longer exists
+[INFO] Finished
+[INFO] +================================================ TIMEIT STATS =================================================+
+[INFO] |                       Event Label                        | Avg.Time | Min.Time | Max.Time | Hits R0 / Total   |
+[INFO] +---------------------------------------------------------------------------------------------------------------+
+[INFO] | Compute LB                                               |   283.67 |   283.65 |   283.72 |       1 / 80      |
+[INFO] |  ╚ Synapse creation                                      |   116.63 |   116.32 |   118.05 |       1 / 80      |
+[INFO] | Cell creation                                            |   150.95 |   150.95 |   150.95 |       1 / 80      |
+[INFO] | Synapse creation                                         |   116.45 |   116.26 |   117.81 |       1 / 80      |
+[INFO] | Enable Stimulus                                          |     0.00 |     0.00 |     0.00 |       1 / 80      |
+[INFO] | Enable Modifications                                     |     0.00 |     0.00 |     0.00 |       1 / 80      |
+[INFO] | Enable Reports                                           |     0.26 |     0.26 |     0.26 |       1 / 80      |
+[INFO] | Model Finalized                                          |     5.40 |     5.40 |     5.40 |       1 / 80      |
+[INFO] |  ╚ stdinit                                               |     5.38 |     5.38 |     5.38 |       1 / 80      |
+[INFO] | finished Run                                             |  1830.03 |  1830.03 |  1830.03 |       1 / 80      |
+[INFO] |  ╚ psolve                                                |  1829.81 |  1829.81 |  1829.81 |       1 / 80      |
+[INFO] +---------------------------------------------------------------------------------------------------------------+

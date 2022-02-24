@@ -1,0 +1,980 @@
+Autoloading python/3.8.3
+Autoloading hpe-mpi/2.25.hmpt
+Autoloading cuda/11.0.2
+cp: cannot create regular file ‘/gpfs/bbp.cscs.ch/home/magkanar/proj16scratch/FRONTIERS/neuron-frontiers-2021/netpyne/M1/run_neuron_simulation/M1/.git/objects/05/d3721d05122b7119ffc4d259f75f4958aef2eb’: Permission denied
+cp: cannot create regular file ‘/gpfs/bbp.cscs.ch/home/magkanar/proj16scratch/FRONTIERS/neuron-frontiers-2021/netpyne/M1/run_neuron_simulation/M1/.git/objects/b2/716d3e699473d3deaadae6950689c57d73c5ae’: Permission denied
+cp: cannot create regular file ‘/gpfs/bbp.cscs.ch/home/magkanar/proj16scratch/FRONTIERS/neuron-frontiers-2021/netpyne/M1/run_neuron_simulation/M1/.git/objects/ed/84599616b07113ba0865d62d285972fd2b33d4’: Permission denied
+cp: cannot create regular file ‘/gpfs/bbp.cscs.ch/home/magkanar/proj16scratch/FRONTIERS/neuron-frontiers-2021/netpyne/M1/run_neuron_simulation/M1/.git/objects/92/ee3e5ef782c1b179cd1171a4cd7dabb89259db’: Permission denied
+cp: cannot create regular file ‘/gpfs/bbp.cscs.ch/home/magkanar/proj16scratch/FRONTIERS/neuron-frontiers-2021/netpyne/M1/run_neuron_simulation/M1/.git/objects/e0/de0fcd7b70a935bb3f3fd55583afdb1898e6d3’: Permission denied
+cp: cannot create regular file ‘/gpfs/bbp.cscs.ch/home/magkanar/proj16scratch/FRONTIERS/neuron-frontiers-2021/netpyne/M1/run_neuron_simulation/M1/.git/objects/e0/15dc6fe44387dad4aa22ce14f2d86a15453e40’: Permission denied
+cp: cannot create regular file ‘/gpfs/bbp.cscs.ch/home/magkanar/proj16scratch/FRONTIERS/neuron-frontiers-2021/netpyne/M1/run_neuron_simulation/M1/.git/objects/b6/71dda75b26f18b7df917cd839dfe7867c078df’: Permission denied
+cp: cannot create regular file ‘/gpfs/bbp.cscs.ch/home/magkanar/proj16scratch/FRONTIERS/neuron-frontiers-2021/netpyne/M1/run_neuron_simulation/M1/.git/objects/pack/pack-eb222ba42ce4d9bc7247d345fa6247244c4c7129.idx’: Permission denied
+cp: cannot create regular file ‘/gpfs/bbp.cscs.ch/home/magkanar/proj16scratch/FRONTIERS/neuron-frontiers-2021/netpyne/M1/run_neuron_simulation/M1/.git/objects/pack/pack-eb222ba42ce4d9bc7247d345fa6247244c4c7129.pack’: Permission denied
+cp: cannot create regular file ‘/gpfs/bbp.cscs.ch/home/magkanar/proj16scratch/FRONTIERS/neuron-frontiers-2021/netpyne/M1/run_neuron_simulation/M1/.git/objects/57/f5d04b38e302d67c2b470f9684ad8d7d09897a’: Permission denied
+cp: cannot create regular file ‘/gpfs/bbp.cscs.ch/home/magkanar/proj16scratch/FRONTIERS/neuron-frontiers-2021/netpyne/M1/run_neuron_simulation/M1/.git/objects/20/fdd5d5f5b3c20b727721c6f633f417c0832c8d’: Permission denied
+cp: cannot create regular file ‘/gpfs/bbp.cscs.ch/home/magkanar/proj16scratch/FRONTIERS/neuron-frontiers-2021/netpyne/M1/run_neuron_simulation/M1/.git/objects/79/30edb1813fcc72e02c23f8d1ecaee387b59a95’: Permission denied
+cp: cannot create regular file ‘/gpfs/bbp.cscs.ch/home/magkanar/proj16scratch/FRONTIERS/neuron-frontiers-2021/netpyne/M1/run_neuron_simulation/M1/.git/objects/d5/f52ab76175589fa76e381c3ebdbdac0e36e084’: Permission denied
+cp: cannot create regular file ‘/gpfs/bbp.cscs.ch/home/magkanar/proj16scratch/FRONTIERS/neuron-frontiers-2021/netpyne/M1/run_neuron_simulation/M1/.git/objects/42/af395493446b7d7af802c2afb761d11aed3e62’: Permission denied
+numprocs=80
+NEURON -- VERSION 8.0a-675-g1b3223fec+ HEAD (1b3223fec+) 2021-10-13
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2021
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/ar_traub.mod" "mod/cadad.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HCN1.mod" "mod/h_harnett.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/ican_sidi.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr_BS.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/nafcr.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/savedist.mod" "mod/vecstim.mod"
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+	0 
+Balancing each compartment to -73 mV
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+	0 
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Balancing each compartment to -73 mV
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 40: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 40: 117907 
+  Number of synaptic contacts on node 40: 483172 
+  Number of stims on node 40: 0 
+Recording 2 traces of 1 types on node 40
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 42: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 42: 117349 
+  Number of synaptic contacts on node 42: 471957 
+  Number of stims on node 42: 0 
+Recording 0 traces of 0 types on node 42
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 43: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 43: 117358 
+  Number of synaptic contacts on node 43: 469590 
+  Number of stims on node 43: 0 
+Recording 0 traces of 0 types on node 43
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 45: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 45: 115956 
+  Number of synaptic contacts on node 45: 465737 
+  Number of stims on node 45: 0 
+Recording 0 traces of 0 types on node 45
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 46: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 46: 118058 
+  Number of synaptic contacts on node 46: 483140 
+  Number of stims on node 46: 0 
+Recording 0 traces of 0 types on node 46
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 47: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 47: 119874 
+  Number of synaptic contacts on node 47: 499011 
+  Number of stims on node 47: 0 
+Recording 0 traces of 0 types on node 47
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+
+Start time:  2022-01-13 18:14:31.672668
+
+Creating network of 35 cell populations on 80 hosts...
+  Number of cells on node 0: 221 
+  Done; cell creation time = 2.67 s.
+Making connections...
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 0: 119166 
+  Number of synaptic contacts on node 0: 482849 
+  Done; cell connection time = 470.87 s.
+  Number of stims on node 0: 0 
+  Done; cell stims creation time = 0.00 s.
+Recording 1 traces of 1 types on node 0
+0.0s
+
+Running simulation using NEURON for 1000.0 ms...
+0.1s
+0.2s
+0.3s
+0.4s
+0.5s
+0.6s
+0.7s
+0.8s
+0.9s
+1.0s
+  Done; run time = 4907.41 s; real-time ratio: 0.00.
+
+Gathering data...
+  Done; gather time = 2.32 s.
+
+Analyzing...
+  Cells: 17651
+  Connections: 0 (0.00 per cell)
+  Spikes: 43059 (2.44 Hz)
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 48: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 48: 116130 
+  Number of synaptic contacts on node 48: 461817 
+  Number of stims on node 48: 0 
+Recording 0 traces of 0 types on node 48
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 49: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 49: 115866 
+  Number of synaptic contacts on node 49: 466595 
+  Number of stims on node 49: 0 
+Recording 1 traces of 1 types on node 49
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 50: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 50: 116993 
+  Number of synaptic contacts on node 50: 470668 
+  Number of stims on node 50: 0 
+Recording 0 traces of 0 types on node 50
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 51: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 51: 115601 
+  Number of synaptic contacts on node 51: 460660 
+  Number of stims on node 51: 0 
+Recording 0 traces of 0 types on node 51
+  Simulated time: 1.0 s; 80 workers
+  Run time: 4907.41 s
+   NGF1 : 0.796 Hz
+   IT2 : 1.423 Hz
+   SOM2 : 14.800 Hz
+   PV2 : 0.461 Hz
+   VIP2 : 5.224 Hz
+   NGF2 : 0.803 Hz
+   IT4 : 0.023 Hz
+   SOM4 : 12.667 Hz
+   PV4 : 2.417 Hz
+   VIP4 : 0.000 Hz
+   NGF4 : 0.714 Hz
+   IT5A : 1.231 Hz
+   SOM5A : 4.574 Hz
+   PV5A : 4.402 Hz
+   VIP5A : 2.615 Hz
+   NGF5A : 0.500 Hz
+   IT5B : 0.699 Hz
+   PT5B : 8.817 Hz
+   SOM5B : 4.446 Hz
+   PV5B : 6.079 Hz
+   VIP5B : 0.333 Hz
+   NGF5B : 1.188 Hz
+   IT6 : 1.727 Hz
+   CT6 : 0.003 Hz
+   SOM6 : 2.943 Hz
+   PV6 : 0.009 Hz
+   VIP6 : 1.125 Hz
+   NGF6 : 2.538 Hz
+   TPO : 2.374 Hz
+   TVL : 2.529 Hz
+   S1 : 2.396 Hz
+   S2 : 2.559 Hz
+   cM1 : 2.599 Hz
+   M2 : 2.447 Hz
+   OC : 2.430 Hz
+Saving output as ../data/v103_manualTune/v103_tune3_data.json  ... 
+Finished saving!
+  Done; saving time = 1.11 s.
+Preparing spike data...
+Plotting raster...
+Plotting recorded cell traces ... trace
+  Done; plotting time = 11.07 s
+
+Total time = 5397.76 s
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 52: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 52: 117722 
+  Number of synaptic contacts on node 52: 473391 
+  Number of stims on node 52: 0 
+Recording 1 traces of 1 types on node 52
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 53: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 53: 117637 
+  Number of synaptic contacts on node 53: 473466 
+  Number of stims on node 53: 0 
+Recording 0 traces of 0 types on node 53
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 1: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 1: 118704 
+  Number of synaptic contacts on node 1: 477475 
+  Number of stims on node 1: 0 
+Recording 1 traces of 1 types on node 1
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 54: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 54: 116069 
+  Number of synaptic contacts on node 54: 464794 
+  Number of stims on node 54: 0 
+Recording 0 traces of 0 types on node 54
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 2: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 2: 118079 
+  Number of synaptic contacts on node 2: 477829 
+  Number of stims on node 2: 0 
+Recording 0 traces of 0 types on node 2
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 55: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 55: 117890 
+  Number of synaptic contacts on node 55: 475605 
+  Number of stims on node 55: 0 
+Recording 1 traces of 1 types on node 55
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 3: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 3: 120713 
+  Number of synaptic contacts on node 3: 493256 
+  Number of stims on node 3: 0 
+Recording 0 traces of 0 types on node 3
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 56: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 56: 116173 
+  Number of synaptic contacts on node 56: 462304 
+  Number of stims on node 56: 0 
+Recording 0 traces of 0 types on node 56
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 4: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 4: 118902 
+  Number of synaptic contacts on node 4: 482290 
+  Number of stims on node 4: 0 
+Recording 0 traces of 0 types on node 4
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 57: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 57: 116911 
+  Number of synaptic contacts on node 57: 472652 
+  Number of stims on node 57: 0 
+Recording 0 traces of 0 types on node 57
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 58: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 58: 117940 
+  Number of synaptic contacts on node 58: 476756 
+  Number of stims on node 58: 0 
+Recording 0 traces of 0 types on node 58
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 5: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 5: 118283 
+  Number of synaptic contacts on node 5: 485270 
+  Number of stims on node 5: 0 
+Recording 0 traces of 0 types on node 5
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 59: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 59: 116363 
+  Number of synaptic contacts on node 59: 468978 
+  Number of stims on node 59: 0 
+Recording 1 traces of 1 types on node 59
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 6: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 6: 117858 
+  Number of synaptic contacts on node 6: 478119 
+  Number of stims on node 6: 0 
+Recording 0 traces of 0 types on node 6
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 61: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 61: 116022 
+  Number of synaptic contacts on node 61: 466560 
+  Number of stims on node 61: 0 
+Recording 0 traces of 0 types on node 61
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 63: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 63: 116246 
+  Number of synaptic contacts on node 63: 475271 
+  Number of stims on node 63: 0 
+Recording 0 traces of 0 types on node 63
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 7: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 7: 116721 
+  Number of synaptic contacts on node 7: 466856 
+  Number of stims on node 7: 0 
+Recording 0 traces of 0 types on node 7
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 64: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 64: 116574 
+  Number of synaptic contacts on node 64: 480456 
+  Number of stims on node 64: 0 
+Recording 0 traces of 0 types on node 64
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 8: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 8: 117631 
+  Number of synaptic contacts on node 8: 466483 
+  Number of stims on node 8: 0 
+Recording 0 traces of 0 types on node 8
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 65: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 65: 116490 
+  Number of synaptic contacts on node 65: 464186 
+  Number of stims on node 65: 0 
+Recording 3 traces of 1 types on node 65
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 66: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 66: 116705 
+  Number of synaptic contacts on node 66: 453990 
+  Number of stims on node 66: 0 
+Recording 1 traces of 1 types on node 66
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 9: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 9: 117533 
+  Number of synaptic contacts on node 9: 477431 
+  Number of stims on node 9: 0 
+Recording 0 traces of 0 types on node 9
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 67: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 67: 117614 
+  Number of synaptic contacts on node 67: 469906 
+  Number of stims on node 67: 0 
+Recording 0 traces of 0 types on node 67
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 10: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 10: 118247 
+  Number of synaptic contacts on node 10: 474015 
+  Number of stims on node 10: 0 
+Recording 0 traces of 0 types on node 10
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 68: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 68: 117887 
+  Number of synaptic contacts on node 68: 474595 
+  Number of stims on node 68: 0 
+Recording 0 traces of 0 types on node 68
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 69: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 69: 116903 
+  Number of synaptic contacts on node 69: 464987 
+  Number of stims on node 69: 0 
+Recording 1 traces of 1 types on node 69
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 11: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 11: 118757 
+  Number of synaptic contacts on node 11: 480474 
+  Number of stims on node 11: 0 
+Recording 1 traces of 1 types on node 11
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 70: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 70: 117355 
+  Number of synaptic contacts on node 70: 469801 
+  Number of stims on node 70: 0 
+Recording 2 traces of 1 types on node 70
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 71: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 71: 118767 
+  Number of synaptic contacts on node 71: 485470 
+  Number of stims on node 71: 0 
+Recording 0 traces of 0 types on node 71
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 12: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 12: 117176 
+  Number of synaptic contacts on node 12: 473897 
+  Number of stims on node 12: 0 
+Recording 0 traces of 0 types on node 12
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 72: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 72: 117380 
+  Number of synaptic contacts on node 72: 474573 
+  Number of stims on node 72: 0 
+Recording 0 traces of 0 types on node 72
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 73: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 73: 118240 
+  Number of synaptic contacts on node 73: 484906 
+  Number of stims on node 73: 0 
+Recording 0 traces of 0 types on node 73
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 13: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 13: 116356 
+  Number of synaptic contacts on node 13: 464706 
+  Number of stims on node 13: 0 
+Recording 0 traces of 0 types on node 13
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 74: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 74: 115682 
+  Number of synaptic contacts on node 74: 465210 
+  Number of stims on node 74: 0 
+Recording 0 traces of 0 types on node 74
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 75: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 75: 116956 
+  Number of synaptic contacts on node 75: 472894 
+  Number of stims on node 75: 0 
+Recording 2 traces of 1 types on node 75
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 14: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 14: 117196 
+  Number of synaptic contacts on node 14: 479575 
+  Number of stims on node 14: 0 
+Recording 0 traces of 0 types on node 14
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 76: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 76: 117747 
+  Number of synaptic contacts on node 76: 475734 
+  Number of stims on node 76: 0 
+Recording 0 traces of 0 types on node 76
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 15: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 15: 115750 
+  Number of synaptic contacts on node 15: 466122 
+  Number of stims on node 15: 0 
+Recording 0 traces of 0 types on node 15
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 77: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 77: 115828 
+  Number of synaptic contacts on node 77: 468356 
+  Number of stims on node 77: 0 
+Recording 0 traces of 0 types on node 77
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 78: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 78: 115874 
+  Number of synaptic contacts on node 78: 470838 
+  Number of stims on node 78: 0 
+Recording 0 traces of 0 types on node 78
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 16: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 16: 119304 
+  Number of synaptic contacts on node 16: 492274 
+  Number of stims on node 16: 0 
+Recording 1 traces of 1 types on node 16
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 79: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 79: 118213 
+  Number of synaptic contacts on node 79: 482006 
+  Number of stims on node 79: 0 
+Recording 1 traces of 1 types on node 79
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 17: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 17: 117288 
+  Number of synaptic contacts on node 17: 478716 
+  Number of stims on node 17: 0 
+Recording 0 traces of 0 types on node 17
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 41: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 41: 115947 
+  Number of synaptic contacts on node 41: 462145 
+  Number of stims on node 41: 0 
+Recording 1 traces of 1 types on node 41
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 44: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 44: 117049 
+  Number of synaptic contacts on node 44: 471238 
+  Number of stims on node 44: 0 
+Recording 0 traces of 0 types on node 44
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 18: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 18: 118040 
+  Number of synaptic contacts on node 18: 477701 
+  Number of stims on node 18: 0 
+Recording 0 traces of 0 types on node 18
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 60: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 60: 118121 
+  Number of synaptic contacts on node 60: 477976 
+  Number of stims on node 60: 0 
+Recording 1 traces of 1 types on node 60
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 62: 220 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 62: 115230 
+  Number of synaptic contacts on node 62: 461585 
+  Number of stims on node 62: 0 
+Recording 1 traces of 1 types on node 62
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 19: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 19: 118255 
+  Number of synaptic contacts on node 19: 484164 
+  Number of stims on node 19: 0 
+Recording 0 traces of 0 types on node 19
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 20: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 20: 119437 
+  Number of synaptic contacts on node 20: 484539 
+  Number of stims on node 20: 0 
+Recording 0 traces of 0 types on node 20
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 21: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 21: 117548 
+  Number of synaptic contacts on node 21: 471077 
+  Number of stims on node 21: 0 
+Recording 0 traces of 0 types on node 21
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 22: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 22: 119429 
+  Number of synaptic contacts on node 22: 484902 
+  Number of stims on node 22: 0 
+Recording 1 traces of 1 types on node 22
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 23: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 23: 118535 
+  Number of synaptic contacts on node 23: 485749 
+  Number of stims on node 23: 0 
+Recording 1 traces of 1 types on node 23
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 24: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 24: 116222 
+  Number of synaptic contacts on node 24: 467415 
+  Number of stims on node 24: 0 
+Recording 1 traces of 1 types on node 24
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 25: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 25: 116951 
+  Number of synaptic contacts on node 25: 469807 
+  Number of stims on node 25: 0 
+Recording 0 traces of 0 types on node 25
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 26: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 26: 116515 
+  Number of synaptic contacts on node 26: 466610 
+  Number of stims on node 26: 0 
+Recording 1 traces of 1 types on node 26
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 27: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 27: 117850 
+  Number of synaptic contacts on node 27: 479990 
+  Number of stims on node 27: 0 
+Recording 0 traces of 0 types on node 27
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 28: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 28: 118050 
+  Number of synaptic contacts on node 28: 480137 
+  Number of stims on node 28: 0 
+Recording 0 traces of 0 types on node 28
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 29: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 29: 118453 
+  Number of synaptic contacts on node 29: 476261 
+  Number of stims on node 29: 0 
+Recording 0 traces of 0 types on node 29
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 30: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 30: 117357 
+  Number of synaptic contacts on node 30: 476210 
+  Number of stims on node 30: 0 
+Recording 0 traces of 0 types on node 30
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 31: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 31: 117482 
+  Number of synaptic contacts on node 31: 476841 
+  Number of stims on node 31: 0 
+Recording 0 traces of 0 types on node 31
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 32: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 32: 118432 
+  Number of synaptic contacts on node 32: 483929 
+  Number of stims on node 32: 0 
+Recording 0 traces of 0 types on node 32
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 33: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 33: 118183 
+  Number of synaptic contacts on node 33: 485633 
+  Number of stims on node 33: 0 
+Recording 0 traces of 0 types on node 33
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 34: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 34: 117269 
+  Number of synaptic contacts on node 34: 474699 
+  Number of stims on node 34: 0 
+Recording 0 traces of 0 types on node 34
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 35: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 35: 115923 
+  Number of synaptic contacts on node 35: 462671 
+  Number of stims on node 35: 0 
+Recording 1 traces of 1 types on node 35
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 36: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 36: 116284 
+  Number of synaptic contacts on node 36: 461671 
+  Number of stims on node 36: 0 
+Recording 0 traces of 0 types on node 36
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 37: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 37: 117166 
+  Number of synaptic contacts on node 37: 473280 
+  Number of stims on node 37: 0 
+Recording 0 traces of 0 types on node 37
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 38: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 38: 116288 
+  Number of synaptic contacts on node 38: 471070 
+  Number of stims on node 38: 0 
+Recording 0 traces of 0 types on node 38
+Warning: could not import interactive plotting functions; make sure the "bokeh" package is installed.
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+  Number of cells on node 39: 221 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 39: 118346 
+  Number of synaptic contacts on node 39: 475919 
+  Number of stims on node 39: 0 
+Recording 0 traces of 0 types on node 39

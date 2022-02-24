@@ -1,0 +1,138 @@
+Autoloading python/3.8.3
+Autoloading hpe-mpi/2.25.hmpt
+Autoloading cuda/11.0.2
+numprocs=80
+NEURON -- VERSION 8.0a-675-g1b3223fec+ HEAD (1b3223fec+) 2021-10-13
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2021
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/ampanmda.mod" "mod/distrt.mod" "mod/fi.mod" "mod/fi_stdp.mod" "mod/gap.mod" "mod/Gfluct.mod" "mod/kamt.mod" "mod/kdrmt.mod" "mod/ks.mod" "mod/naxn.mod" "mod/orn.mod" "mod/ostimhelper.mod" "mod/ThreshDetect.mod"
+determine_connections  6.5299999713897705
+net_mitral_centric after import mgrs elapsedtime 6.58
+1800 mitrals created and connections to mitrals determined elapsedtime 1.03
+Mitral 1689641 and mTufted 0 cells connection infos. generated (it=6,err=0.00479%) elapsedtime 40.71
+rank_gconnections known elapsedtime 0.0699999
+granule gids known on each rank elapsedtime 0
+mk_gconnection_info (#granules = 189610) elapsedtime 0.00999999
+mitrals registered elapsedtime 0
+0 blanes created elapsedtime 0
+blanes registered elapsedtime 0
+189610 granules built elapsedtime 0.14
+granules registered elapsedtime 0.03
+0 middle tufted to blanes connections generated elapsedtime 0
+	189610 granules are generated elapsedtime 0
+0 blanes to granule connections generated elapsedtime 0.27
+nmultiple =  3379282
+3379282 ThreshDetect for reciprocalsynapses constructed elapsedtime 3.54
+0 mt to bc elapsedtime 0
+0 bc to gc elapsedtime 0
+build_net_round_robin elapsedtime 0
+round robin setuptime  52.329999923706055
+build_subnet_round_robin  45.799999952316284
+Gap junctions built elapsedtime 0.04
+NetCon count =  3379282
+Total # compartments =  4881974
+OdorStim Onion start=50 dur=1000 conc=1e+09
+total setup time  52.47999978065491
+mindelay = 1
+t=0 wall interval 0.86
+cvode active= False
+weights reset not active
+init time = 0
+t=200.016 wall interval 349.67
+t=400.031 wall interval 347.02
+t=600.047 wall interval 348.09
+t=800.062 wall interval 348.35
+t=1000.08 wall interval 347.08
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+init time = 0
+spike2file call#1 spikes=24907995 sorted using 10 ranks, writing to 1 files in 763.25 sec
+Solver time : 1826.66
+runtime = 2604.54
+Load Balance = 0.956795
+
+              comp          spk        split          gap 
+ avg       1718.38         9.35         0.00        97.86 
+ max       1795.97        12.36         0.00       190.38 
+weight_files nrn_cpu.weight.dat.[0:64] write time 9.75 s
+vm recorded  write time 0 elapsedtime 2615.34
+total elapsed time  2667.7799999713898
+rm: cannot remove ‘nrn_cpu.*’: No such file or directory
