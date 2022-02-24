@@ -1,0 +1,25 @@
+slurm-9.out:  Done; run time = 4598.78 s; real-time ratio: 0.00.
+slurm-43.out:  Done; run time = 4595.37 s; real-time ratio: 0.00.
+slurm-46.out:  Done; run time = 4580.13 s; real-time ratio: 0.00.
+slurm-44.out:  Done; run time = 4604.19 s; real-time ratio: 0.00.
+slurm-47.out:  Done; run time = 4624.30 s; real-time ratio: 0.00.
+slurm-45.out:  Done; run time = 5478.27 s; real-time ratio: 0.00.
+slurm-48.out:  Done; run time = 4603.06 s; real-time ratio: 0.00.
+slurm-49.out:  Done; run time = 5473.54 s; real-time ratio: 0.00.
+slurm-50.out:  Done; run time = 4576.36 s; real-time ratio: 0.00.
+slurm-51.out:  Done; run time = 4608.08 s; real-time ratio: 0.00.
+
+Times
+4598.78
+4595.37
+4580.13
+4604.19
+4624.3
+5478.27
+4603.06
+5473.54
+4576.36
+4608.08
+
+Average
+4774.208
