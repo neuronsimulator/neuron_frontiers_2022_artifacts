@@ -50,7 +50,7 @@ bardata = [circadian7.mean()/circadian8.mean(),
            old3d['MIN(runtime)']/new3d['MIN(runtime)'],
            old3d['MIN(runtime)']/new3d16['MIN(runtime)']]
 pyplot.figure()
-pyplot.bar(range(4),bardata)
+pyplot.bar(range(4),bardata, color="#80b1d3", edgecolor='k', linewidth=0.5)
 pyplot.gca().set_xticks(range(4))
 pyplot.gca().set_xticklabels(barlabels,fontsize=8)
 for i,v in zip(range(4),bardata):
